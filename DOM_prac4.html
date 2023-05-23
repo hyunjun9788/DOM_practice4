@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .dropdown-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            background-color: green;
+
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropbtn1, .dropbtn2 {
+            background-color: green;
+            color: white;
+            padding: 16px;
+            padding-right: 30px;
+            font-size: 16px;
+            border: none;
+            transition:background-color 0.3s ease;
+        }
+
+        .dropbtn1:hover, .dropbtn2:hover{
+            background-color: darkgreen;
+        }
+        .dropdown-content1, .dropdown-content2 {
+            display: none;
+            position: absolute;
+            background-color: green;
+            z-index: 1;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            transition: display 0.3s ease;
+        }
+
+        .dropdown-content1 a, .dropdown-content2 a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content1 a:hover, .dropdown-content2 a:hover {
+            background-color: yellowgreen;
+        }
+
+        .dropdown:hover .dropdown-content1 {
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content2 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="dropdown-wrapper">
+    <div class="dropdown">
+        <div class="dropbtn1">프로그래밍 언어</div>
+        <div class="dropdown-content1">
+            <a class='html'>HTML</a>
+            <a class='css'>CSS</a>
+            <a class='js'>Javascript</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <div class="dropbtn2">Contact</div>
+        <div class="dropdown-content2">
+            <a class='address'>주소</a>
+            <a class='phone'>전화번호</a>
+            <a class='mobile'>휴대폰번호</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
